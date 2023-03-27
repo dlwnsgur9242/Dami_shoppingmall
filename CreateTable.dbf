@@ -1,0 +1,8 @@
+create table member(
+id varchar(20) primary key,
+passwd varchar(20),
+name varchar(20),
+email varchar(40),
+phone varchar(30),
+address varchar(100)
+)
