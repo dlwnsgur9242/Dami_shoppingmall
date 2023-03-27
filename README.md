@@ -1,4 +1,5 @@
 # Dami_shoppingmall
+A simple shopping mall project with administrator access
 
 # Tech Stack
 <pre>
