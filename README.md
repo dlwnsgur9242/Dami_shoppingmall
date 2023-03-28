@@ -17,11 +17,13 @@ Apache Tomcat 9.0
 ### Login page
 ![로그인 페이지](https://user-images.githubusercontent.com/90494150/228306288-051c59b2-861f-447d-9f90-82cbed6aa665.png)
 ##로그인page입니다. 로그인완료 메시지출력함.
+
 ![로그인 페이지 완료](https://user-images.githubusercontent.com/90494150/228306679-f9ec619f-e539-4afb-b905-ce7e678f3793.png)
 
 ### Join page
 ![회원가입 페이지](https://user-images.githubusercontent.com/90494150/228306762-1bec2cec-2865-4ee5-9834-b9f551b28b8b.png)
 ##회원가입page입니다. ID, PWD, PWD확인불일치, 미입력 시 가입이 되지않도록 해보았습니다.
+
 ![회원가입 - 메시지](https://user-images.githubusercontent.com/90494150/228307046-f90b845a-2e59-47b1-9eb5-dc1cf3fb8783.png)
 ##회원가입이 완료/실패 메시지가 출력됩니다.
 
