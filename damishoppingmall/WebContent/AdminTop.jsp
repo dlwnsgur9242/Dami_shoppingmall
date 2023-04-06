@@ -34,7 +34,7 @@
 
         <ul class="navbar_usermenu">
             <li><a href="admin/AdminUserList.jsp">회원관리</a></li>
-            <li><a href="admin/ProdModForm.jsp">상품등록</a></li>
+            <li><a href="admin/ProductList.jsp">상품등록</a></li>
             <li><a href="Pro/LogoutPro.jsp">로그아웃</a></li>
         </ul>
 

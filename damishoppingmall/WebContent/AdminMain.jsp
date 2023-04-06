@@ -3,9 +3,10 @@
    
 <%@include file="AdminTop.jsp" %>
 <%
-String[] img ={"ozing.jpeg", "banana.jpeg", "gaesoo.jpeg", "poka.jpeg", "cancho.jpeg", "whitehime.jpeg", "milkys.jpeg", "minit.jpeg", "ggobuk.jpeg"};
-String[] name = {"오징어집", "바나나킥", "헛개수", "포카칩", "칸쵸", "화이트하임", "밀키스", "미닛메이드", "꼬북칩"};
-String[] price = {"1,500", "1,500", "1,700", "1,300", "1,350", "1,400", "500", "1,000", "1,100"};
+String[] img ={"ozing.jpeg", "banana.jpeg", "gaesoo.jpeg", "poka.jpeg", "cancho.jpeg", "whitehime.jpeg", "milkys.jpeg", "minit.jpeg", "ggobuk.jpeg",
+		"cancho.jpeg", "cancho.jpeg", "cancho.jpeg"};
+String[] name = {"오징어집", "바나나킥", "헛개수", "포카칩", "칸쵸", "화이트하임", "밀키스", "미닛메이드", "꼬북칩", "밀키스", "밀키스", "밀키스"};
+String[] price = {"1,500", "1,500", "1,700", "1,300", "1,350", "1,400", "500", "1,000", "1,100", "500", "500", "500"};
 %>
 
 <!-- 관리자 메인 -->

@@ -29,40 +29,21 @@
 		// 필수 입력정보인 아이디, 비밀번호가 입력되었는지 확인하는 함수
 		function checkValue() {
 			if(!document.userInfo.ID.value){
-				alert("아이디를 입력하세요.");
+				alert("상 품 명을 입력하세요.");
 				return false;
 			}
 			
 			if(!document.userInfo.PWD.value){
-				alert("비밀번호를 입력하세요.");
+				alert("가 격을 입력하세요.");
 				return false;
 			}
 			
 			// 비밀번호와 비밀번호 확인에 입력된 값이 동일한지 확인
-			if(document.userInfo.PWD.value != document.userInfo.PWD_RE.value ){
-				alert("비밀번호를 동일하게 입력하세요.");
+			if(document.userInfo.PWD.value){
+				alert("이미지 파일을 등록하세요.");
 				return false;
 			}
 			
-			if(!document.userInfo.UserName.value){
-				alert("이름을 입력하세요.");
-				return false;
-			}
-			
-			if(!document.userInfo.Email.value){
-				alert("이메일을 입력하세요.");
-				return false;
-			}
-			
-			if(!document.userInfo.Contact.value){
-				alert("연락처를 입력하세요.");
-				return false;
-			}
-			
-			if(!document.userInfo.Address.value){
-				alert("주소를 입력하세요.");
-				return false;
-			}
 		}
 		
 		// 취소 버튼 클릭시 로그인 화면으로 이동

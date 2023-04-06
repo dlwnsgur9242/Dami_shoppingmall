@@ -26,6 +26,9 @@ function fnView() {
 		location.href = "view/CartView.jsp";
 	}
 }
+function fndetail() {
+	
+}
 </script>
 </head>
 <body>
@@ -69,6 +72,8 @@ function fnView() {
 							//두 줄로 쓰기, 닫는 큰 따옴표와 괄호 옆의 띄어쓰기 필수
 							out.println("<input type='button' value='장바구니 담기' ");
 							out.println("onclick='fnCart(\"" + name[i] + "\", \"" + price[i] + "\")' />");
+							out.println("<input type='button' value='상세 페이지'");
+							out.println("onclick='000000(\"" + name[i] + "\", \"" + price[i] + "\")' />");
 						out.println("</td>");
 					out.println("</tr>");
 				out.println("</table>");
