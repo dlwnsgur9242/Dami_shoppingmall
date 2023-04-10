@@ -12,7 +12,7 @@
 	request.setCharacterEncoding("UTF-8");
 	
 <%
-	String savePath = "C:/Users/JUNHYUK/git/Dami_shoppingmall/damishoppingmall/WebContent/img"; // 파일을 저장할 경로
+	String savePath = "C:/Users/JUNHYUK/git/Dami_shoppingmall/damishoppingmall/WebContent/img/"; // 파일을 저장할 경로
 	int maxFileSize = 10 * 1024 * 1024; // 최대 파일 크기 (10MB)
 	int maxMemSize = 4 * 1024; // 최대 메모리 크기 (4KB)
 
@@ -27,10 +27,12 @@
 	// 클라이언트로부터 전송된 파일들을 파싱하여 List<FileItem> 객체로 반환
 	List<FileItem> fileItems = upload.parseRequest(request);
 	
+	String sort = "";
 	String name = "";
 	String price = "";
 	String img = "";
-
+	String imgPath = "";
+	
 	for (FileItem item : fileItems) {
 	  if (item.isFormField()) { // 일반 필드면
 	    if (item.getFieldName().equals("name")) {
@@ -40,14 +42,14 @@
 	    }
 	  } else { // 파일이면
 	    String fileName = new File(item.getName()).getName(); // 파일명 추출
-	    String filePath = savePath + File.separator + fileName; // 파일 저장 경로 생성
-	    item.write(new File(filePath)); // 파일 저장
+	    imgPath = savePath + fileName; // 파일 저장 경로 생성
+	    item.write(new File(imgPath)); // 파일 저장
 	    out.println("File " + fileName + " uploaded successfully.");
 	    
 	    img = fileName; // 파일 이름만 추출하여 DB에 저장할 img 변수에 저장
 	  }
 	}
-	
+	System.out.println(sort);
 	try {
 	  Class.forName("org.mariadb.jdbc.Driver");
 	  String DB_URL = "jdbc:mariadb://127.0.0.1:3307/createtable";
@@ -55,13 +57,15 @@
 	  String DB_pw="2230";
 	
 	  Connection con = DriverManager.getConnection(DB_URL, DB_name, DB_pw);
-	  String sql = "INSERT INTO shop_product( name, price, img) VALUES (?,?,?)"; // sql문 작성(입력받은 값들을 보내기 위한 작업)
+	  String sql = "INSERT INTO shop_product( sort, name, price, img, imgPath) VALUES (?,?,?,?,?)"; // sql문 작성(입력받은 값들을 보내기 위한 작업)
 	
 	  PreparedStatement pstmt = con.prepareStatement(sql);
-	
-	  pstmt.setString(1, name); // values에 들어갈 각각의 name, price, img 설정
-	  pstmt.setString(2, price);
-	  pstmt.setString(3, img);
+	  
+	  pstmt.setString(1, sort);
+	  pstmt.setString(2, name); 
+	  pstmt.setString(3, price);
+	  pstmt.setString(4, img);
+	  pstmt.setString(5, imgPath);
 	
 	  pstmt.executeUpdate();
 	
