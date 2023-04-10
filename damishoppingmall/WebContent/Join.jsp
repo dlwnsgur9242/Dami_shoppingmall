@@ -6,7 +6,7 @@
     <title>회원가입 페이지</title>
     <style>
         #wrap{
-            width:550px;
+            width:600px;
             margin-left:auto; 
             margin-right:auto;
             text-align:center;

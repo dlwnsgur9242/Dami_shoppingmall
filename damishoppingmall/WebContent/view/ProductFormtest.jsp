@@ -37,8 +37,19 @@
 				alert("가격을 입력하세요.");
 				return false;
 			}
-			
-			// 이미지 파일 입력 확인 //DB에 이미지 중복등록 확인(추가해야함)
+			//체크박스가 선택되었는지 확인하는 함수
+			let sort = document.getElementsByName("sort");
+		    let checkedCount = 0;
+		    for (let i = 0; i < sort.length; i++) {
+		        if (sort[i].checked) {
+		            checkedCount++;
+		        }
+		    }
+		    if (checkedCount === 0) {
+		        alert("종류를 선택하세요.");
+		        return false;
+		    }
+			// 이미지 파일 입력 확인 //DB에 이미지 중복등록 확인(미구현)
 			if(!document.ProductInfo.img.value){
 				alert("이미지 파일을 입력하세요.");
 				return false;
@@ -48,7 +59,7 @@
 		
 		// 취소 버튼 클릭시 로그인 화면으로 이동
 		function goProductList() {
-			location.href="admin/ProductList.jsp";
+			location.href="../admin/ProductList.jsp";
 		}
 	</script>
 </head>
@@ -61,25 +72,33 @@
 
 		<!-- 입력한 값을 전송하기 위해 form 태그를 사용한다 -->
 		<!-- 값(파라미터) 전송은 POST 방식, 전송할 페이지는 JoinPro.jsp -->
-		<form method="post" action="../Pro/ProductProtest.jsp" name="ProductInfo"
+		<form method="post" action="../Pro/ProductPro.jsp" name="ProductInfo"
 			onsubmit="return checkValue()" enctype="multipart/form-data">
             <table>
                 <tr>
-                    <td id="title">이름</td>
+                    <td id="title">상 품 명</td>
                     <td>
-                        <input type="text" name="name" maxlength="40">
+                        <input type="text" name="name" maxlength="20">  
+                        <input type="button" value=" 중복확인 ">
                     </td>
                 </tr>
 
                 <tr>
-                    <td id="title">이메일</td>
+                    <td id="title">가 격</td>
                     <td>
-                        <input type="text" name="price" maxlength="80">
+                        <input type="text" name="price" maxlength="30">
                     </td>
                 </tr>
-
+				<tr>
+				    <td id="title">상 품 류</td>
+				    <td>
+				        <input type="checkbox" name="sort" value="snack">과자
+				        <input type="checkbox" name="sort" value="Chocolate/Candy/Gum">초콜릿/사탕/껌
+				        <input type="checkbox" name="sort" value="beverage">음료
+				        <input type="checkbox" name="sort" value="imported_beverage">수입음료
+				</tr>
                 <tr>
-                    <td id="title">연락처</td>
+                    <td id="title">이미지 파일명</td>
                     <td>
                         <input type="file" name="img" maxlength="150">
                     </td>

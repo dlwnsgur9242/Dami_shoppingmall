@@ -32,12 +32,12 @@
     <script>
         function checkValue() {
             inputForm = eval("document.loginInfo");
-            if(!inputForm.ID.value) {
+            if(!inputForm.id.value) {
                 alert("아이디를 입력하세요");    
                 inputForm.ID.focus();
                 return false;
             }
-            if(!inputForm.PWD.value) {
+            if(!inputForm.passwd.value) {
                 alert("비밀번호를 입력하세요");    
                 inputForm.PWD.focus();
                 return false;
@@ -59,25 +59,26 @@
 <body>
     <div id="wrap">
     	<b><font size="6" color="gray"> <i class="fas fa-sign-in-alt"></i> 로그인</font></b>
-        <br><br><br>
-        <form name="loginInfo" method="post" onsubmit="return checkValue()" action="../pro/LoginPro.jsp">
+        <br>
+        <form name="loginInfo" method="post" onsubmit="return checkValue()" action="../Pro/LoginPro.jsp">
        		
        		<!-- 이미지 추가 -->
-			<img src="../../img/welcome.jpg">
+			<img src="../img/welcome.jpg" class="resize-image" width="300" height="300">
 			<br><br>
  
        		<table>
                <tr>
 	               <td>아이디</td>
-	               <td><input type="text" name="ID" maxlength="100"></td>
+	               <td><input type="text" name="id" maxlength="100"></td>
                </tr>
                
                <tr>
 	               <td>비밀번호</td>
-	               <td><input type="password" name="PWD" maxlength="100"></td>
+	               <td><input type="password" name="passwd" maxlength="100"></td>
                </tr>
             </table>
             <br>
+            <%-- <% System.out.println("111111111111111111");%> --%>
             <input type="submit" value=" 로그인 "> 
             <input type="button" value=" 회원가입 " onClick="goJoinForm()">
             <br><br>
