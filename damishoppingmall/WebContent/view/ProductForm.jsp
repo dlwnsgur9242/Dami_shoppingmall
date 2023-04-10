@@ -37,18 +37,7 @@
 				alert("가격을 입력하세요.");
 				return false;
 			}
-			//체크박스가 선택되었는지 확인하는 함수
-			let sort = document.getElementsByName("sort");
-		    let checkedCount = 0;
-		    for (let i = 0; i < sort.length; i++) {
-		        if (sort[i].checked) {
-		            checkedCount++;
-		        }
-		    }
-		    if (checkedCount === 0) {
-		        alert("종류를 선택하세요.");
-		        return false;
-		    }
+			
 			// 이미지 파일 입력 확인 //DB에 이미지 중복등록 확인(미구현)
 			if(!document.ProductInfo.img.value){
 				alert("이미지 파일을 입력하세요.");
@@ -59,7 +48,7 @@
 		
 		// 취소 버튼 클릭시 로그인 화면으로 이동
 		function goProductList() {
-			location.href="../admin/ProductList.jsp";
+			location.href="admin/ProductList.jsp";
 		}
 	</script>
 </head>
@@ -89,14 +78,7 @@
                         <input type="text" name="price" maxlength="30">
                     </td>
                 </tr>
-				<tr>
-				    <td id="title">상 품 류</td>
-				    <td>
-				        <input type="checkbox" name="sort" value="snack">과자
-				        <input type="checkbox" name="sort" value="Chocolate/Candy/Gum">초콜릿/사탕/껌
-				        <input type="checkbox" name="sort" value="beverage">음료
-				        <input type="checkbox" name="sort" value="imported_beverage">수입음료
-				</tr>
+
                 <tr>
                     <td id="title">이미지 파일명</td>
                     <td>

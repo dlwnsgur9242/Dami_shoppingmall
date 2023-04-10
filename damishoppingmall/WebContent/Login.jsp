@@ -1,11 +1,11 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <html>
+ 			<!-- 로그인 페이지 입니다. -->
 <head>
     <%
     	request.setCharacterEncoding("UTF-8");  
     %>
-    <script src="https://kit.fontawesome.com/3edede7444.js" crossorigin="anonymous"></script>
     <title>로그인 페이지</title>
     
     <style>
@@ -34,19 +34,19 @@
             inputForm = eval("document.loginInfo");
             if(!inputForm.id.value) {
                 alert("아이디를 입력하세요");    
-                inputForm.ID.focus();
+                inputForm.id.focus();
                 return false;
             }
             if(!inputForm.passwd.value) {
                 alert("비밀번호를 입력하세요");    
-                inputForm.PWD.focus();
+                inputForm.passwd.focus();
                 return false;
             }
         } 
         
      // 회원가입 버튼 클릭시 회원가입 화면으로 이동
-		function goJoinForm() {
-			location.href="JoinForm.jsp";
+		function goJoin() {
+			location.href="Join.jsp";
 		}	
 		
 		function goAdminLoginPro() {
@@ -58,13 +58,13 @@
 
 <body>
     <div id="wrap">
-    	<b><font size="6" color="gray"> <i class="fas fa-sign-in-alt"></i> 로그인</font></b>
-        <br>
+    	<b><font size="600" color="gray"> <i class="fas fa-sign-in-alt"></i>Login</font></b>
+        <br><br>
         <form name="loginInfo" method="post" onsubmit="return checkValue()" action="Pro/LoginPro.jsp">
        		
        		<!-- 이미지 추가 -->
-			<img src="img/welcome.jpg" class="resize-image" width="300" height="300">
-			<br><br>
+			<img src="img/dog1.jpg" width= "200" height="180">
+			<br>
  
        		<table>
                <tr>
@@ -78,9 +78,8 @@
                </tr>
             </table>
             <br>
-            <%-- <% System.out.println("111111111111111111");%> --%>
             <input type="submit" value=" 로그인 "> 
-            <input type="button" value=" 회원가입 " onClick="goJoinForm()">
+            <input type="button" value=" 회원가입 " onClick="goJoin()">
             <br><br>
             <input type="button" value=" 아이디 / 비밀번호 찾기 ">
         </form>

@@ -2,11 +2,7 @@
 
 <%@ page contentType="text/html;charset=UTF-8" import="java.sql.*" %>
 <!-- 상품목록 보기(데이터베이스에서 목록을 가져옴) -->
-<html>
-<head>
-    <title>상품 목록 페이지</title>
-</head>
-</html>
+
 <%
 Class.forName("org.mariadb.jdbc.Driver");
 String DB_URL = "jdbc:mariadb://127.0.0.1:3307/createtable";
