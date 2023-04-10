@@ -6,12 +6,12 @@ public class Product {
 	public String Name;
 	public String Price;
 	public String Img;
-	public String Imgpath;
+	//public String Imgpath;
 	
 	public String Name() {
 		return Name;
 	}
-	public void Name(String name) {
+	public void setName(String name) {
 		Name = name;
 	}
 	public String getPrice() {
@@ -26,10 +26,11 @@ public class Product {
 	public void setImg(String img) {
 		Img = img;
 	}
+	/*
 	public String getImgpath() {
 		return Imgpath;
 	}
 	public void setImgpath(String imgpath) {
 		Imgpath = imgpath;
-	}
+	}*/
 }

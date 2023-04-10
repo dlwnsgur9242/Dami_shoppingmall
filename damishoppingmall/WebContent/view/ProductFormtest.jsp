@@ -38,7 +38,7 @@
 				return false;
 			}
 			
-			// 이미지 파일 입력 확인 //DB에 이미지 중복등록 확인(미구현)
+			// 이미지 파일 입력 확인 //DB에 이미지 중복등록 확인(추가해야함)
 			if(!document.ProductInfo.img.value){
 				alert("이미지 파일을 입력하세요.");
 				return false;
@@ -61,26 +61,25 @@
 
 		<!-- 입력한 값을 전송하기 위해 form 태그를 사용한다 -->
 		<!-- 값(파라미터) 전송은 POST 방식, 전송할 페이지는 JoinPro.jsp -->
-		<form method="post" action="../Pro/ProductPro.jsp" name="ProductInfo"
+		<form method="post" action="../Pro/ProductProtest.jsp" name="ProductInfo"
 			onsubmit="return checkValue()" enctype="multipart/form-data">
             <table>
                 <tr>
-                    <td id="title">상 품 명</td>
+                    <td id="title">이름</td>
                     <td>
-                        <input type="text" name="name" maxlength="20">  
-                        <input type="button" value=" 중복확인 ">
+                        <input type="text" name="name" maxlength="40">
                     </td>
                 </tr>
 
                 <tr>
-                    <td id="title">가 격</td>
+                    <td id="title">이메일</td>
                     <td>
-                        <input type="text" name="price" maxlength="30">
+                        <input type="text" name="price" maxlength="80">
                     </td>
                 </tr>
 
                 <tr>
-                    <td id="title">이미지 파일명</td>
+                    <td id="title">연락처</td>
                     <td>
                         <input type="file" name="img" maxlength="150">
                     </td>

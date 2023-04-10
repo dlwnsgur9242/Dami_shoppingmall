@@ -4,8 +4,11 @@
 <html>
 <head>
 <meta charset="EUC-KR">
-<title>Insert title here</title>
+<title>상품 업로드 기능구현</title>
 </head>
+<%
+%>
+
 <body>
 
 </body>
