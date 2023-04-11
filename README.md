@@ -8,7 +8,14 @@ Eclipse 2019-12
 Apache Tomcat 9.0
 </pre>
 # Maria DB 구성
+### User table
 ![다미과자네 사용자 MariaDB](https://user-images.githubusercontent.com/90494150/228307448-f2722ec8-ab61-4ea0-8a6b-52c045c43357.png)
+##회원DB_table입니다.
+
+### Product table
+![PRODUCT_TABLE_DB](https://user-images.githubusercontent.com/90494150/230825684-1311aac5-f42d-49f8-839c-b3f11cb367ac.png)
+##상품DB_table입니다.
+
 
 # Display
 ### Main page
@@ -36,3 +43,8 @@ Apache Tomcat 9.0
 ![관리자 회원관리](https://user-images.githubusercontent.com/90494150/228307800-e6176c84-1dba-4c04-8ecc-0c7123ba413e.png)
 
 ##관리자의 회원관리 page 입니다. 각 회원의 정보 수정 및 삭제 가능합니다.
+
+### Product list
+![image](https://user-images.githubusercontent.com/90494150/230825482-0613de62-2e36-4515-85a5-4c0db87fb39d.png)
+##전체 상품 목록을 확인하는 page입니다.
+
