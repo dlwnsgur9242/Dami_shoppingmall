@@ -25,7 +25,6 @@ Apache Tomcat 9.0
 ### Login page
 ![로그인 페이지](https://user-images.githubusercontent.com/90494150/228306288-051c59b2-861f-447d-9f90-82cbed6aa665.png)
 ##로그인page입니다. 로그인완료 메시지출력함.
-
 ![로그인 페이지 완료](https://user-images.githubusercontent.com/90494150/228306679-f9ec619f-e539-4afb-b905-ce7e678f3793.png)
 
 ### Join page
