@@ -10,6 +10,7 @@ Apache Tomcat 9.0
 # Maria DB 구성
 ### User table
 ![다미과자네 사용자 MariaDB](https://user-images.githubusercontent.com/90494150/228307448-f2722ec8-ab61-4ea0-8a6b-52c045c43357.png)
+
 ##회원DB_table입니다.
 
 ### Product table
@@ -24,8 +25,8 @@ Apache Tomcat 9.0
 
 ### Login page
 ![로그인 페이지](https://user-images.githubusercontent.com/90494150/228306288-051c59b2-861f-447d-9f90-82cbed6aa665.png)
-##로그인page입니다. 로그인완료 메시지출력함.
 ![로그인 페이지 완료](https://user-images.githubusercontent.com/90494150/228306679-f9ec619f-e539-4afb-b905-ce7e678f3793.png)
+##로그인page입니다. 로그인완료 메시지출력함.
 
 ### Join page
 ![회원가입 페이지](https://user-images.githubusercontent.com/90494150/228306762-1bec2cec-2865-4ee5-9834-b9f551b28b8b.png)
@@ -48,4 +49,5 @@ Apache Tomcat 9.0
 
 ### Cart page
 ![image](https://user-images.githubusercontent.com/90494150/231127338-8549661e-559e-435d-abf8-b50646ac0ebc.png)
+
 ##장바구니 page입니다. 
