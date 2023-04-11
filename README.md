@@ -4,7 +4,7 @@ A simple shopping mall project with administrator access
 # Tech Stack
 <pre>
 MariaDB 10.11
-Eclipse 2019-12
+Eclipse 2022-12
 Apache Tomcat 9.0
 </pre>
 # Maria DB 구성
@@ -41,10 +41,12 @@ Apache Tomcat 9.0
 
 ### Main page
 ![관리자 회원관리](https://user-images.githubusercontent.com/90494150/228307800-e6176c84-1dba-4c04-8ecc-0c7123ba413e.png)
-
 ##관리자의 회원관리 page 입니다. 각 회원의 정보 수정 및 삭제 가능합니다.
 
 ### Product list
 ![image](https://user-images.githubusercontent.com/90494150/230825482-0613de62-2e36-4515-85a5-4c0db87fb39d.png)
 ##전체 상품 목록을 확인하는 page입니다.
 
+### Cart page
+![image](https://user-images.githubusercontent.com/90494150/231127338-8549661e-559e-435d-abf8-b50646ac0ebc.png)
+##장바구니 page입니다. 
