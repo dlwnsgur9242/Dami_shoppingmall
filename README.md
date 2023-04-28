@@ -49,4 +49,4 @@ Apache Tomcat 9.0
 
 ### Cart page
 ![image](https://user-images.githubusercontent.com/90494150/231127338-8549661e-559e-435d-abf8-b50646ac0ebc.png)
-## 장바구니 page입니다. 
+## 장바구니 page입니다.  
