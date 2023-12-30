@@ -9,13 +9,13 @@ Apache Tomcat 9.0
 </pre>
 
 # Maria DB 구성
+## 회원DB_table입니다.
 ### User table
 ![다미과자네 사용자 MariaDB](https://user-images.githubusercontent.com/90494150/228307448-f2722ec8-ab61-4ea0-8a6b-52c045c43357.png)
-## 회원DB_table입니다.
 
+## 상품DB_table입니다.
 ### Product table
 ![PRODUCT_TABLE_DB](https://user-images.githubusercontent.com/90494150/230825684-1311aac5-f42d-49f8-839c-b3f11cb367ac.png)
-## 상품DB_table입니다.
 
 
 # Display
