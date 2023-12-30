@@ -24,7 +24,7 @@ Apache Tomcat 9.0
 # Display
 ### Main page
 ![메인 기본화면](https://user-images.githubusercontent.com/90494150/228305839-36defeae-0a1f-46f8-ada1-28789a05a406.png)
-#### - 화면 창크기에 따라서 반응하는 CSS : 반응형 웹(Responsive Webb)으로 해보았습니다.
+#### - 화면 창크기에 따라서 반응하는 CSS : 반응형 웹(Responsive Web)으로 해보았습니다.
 <br><br>
 
 ### Login page
