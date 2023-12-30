@@ -59,4 +59,6 @@ Apache Tomcat 9.0
 
 ### Cart page
 ![image](https://user-images.githubusercontent.com/90494150/231127338-8549661e-559e-435d-abf8-b50646ac0ebc.png)
+![image](https://github.com/dlwnsgur9242/Dami_shoppingmall/assets/90494150/4ac7abe4-4396-4731-9fca-65624d404f25)
+
 #### - 장바구니 page입니다.  
